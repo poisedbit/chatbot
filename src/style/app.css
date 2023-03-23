@@ -1,0 +1,39 @@
+:root {
+	--bg-dark-0: #373a52;
+	--bg-dark-1: #505375;
+	color-scheme: light dark;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+textarea {
+	border: none;
+	overflow: auto;
+	outline: none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+	resize: none;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.dark-0 {
+	background-color: var(--bg-dark-0);
+}
+
+.dark-1 {
+	background-color: var(--bg-dark-1);
+}
