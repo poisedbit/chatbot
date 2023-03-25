@@ -13,7 +13,7 @@
 		sans-serif;
 }
 
-textarea {
+/* textarea {
 	border: none;
 	overflow: auto;
 	outline: none;
@@ -23,11 +23,24 @@ textarea {
 	box-shadow: none;
 
 	resize: none;
-}
+} */
 
 .flex-col {
 	display: flex;
 	flex-direction: column;
+}
+
+.textarea-like {
+	border: none;
+	overflow: auto;
+	outline: none;
+	box-shadow: none;
+
+	-webkit-user-select: text;
+	user-select: text;
+
+	white-space: pre-wrap;
+	word-break: break-word;
 }
 
 .dark-0 {

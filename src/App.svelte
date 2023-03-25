@@ -12,4 +12,16 @@
 		height: 100vh;
 		padding: 1.25% 31.25%;
 	}
+
+	@media only screen and (min-width: 769px) and (max-width: 1024px) {
+		main {
+			padding: 1.2% 25%;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		main {
+			padding: 0;
+		}
+	}
 </style>

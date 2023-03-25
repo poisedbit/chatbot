@@ -1,17 +1,7 @@
-<script lang="ts">
-	function autoResizeTextArea(e: Event) {
-		const textarea = e.currentTarget as HTMLTextAreaElement;
-		textarea.style.height = "auto";
-		textarea.style.height = `${textarea.scrollHeight}px`;
-	}
-</script>
-
 <div class="message-input-container flex-col">
-	<textarea
-		class="message-textarea dark-1"
-		name="message-textarea"
-		rows="1"
-		on:input={autoResizeTextArea}
+	<section
+		class="message-input-field textarea-like dark-1"
+		contenteditable="true"
 	/>
 </div>
 
@@ -19,13 +9,22 @@
 	.message-input-container {
 		height: 10%;
 		width: 100%;
-		padding: 1rem 0;
+		justify-content: flex-end;
 	}
 
-	.message-textarea {
+	.message-input-field {
 		width: 100%;
-		height: auto;
 		padding: 1rem;
 		border-radius: 0.25rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.message-input-container {
+			padding: 0.5rem;
+		}
+
+		.message-input-field {
+			padding: 0.5rem;
+		}
 	}
 </style>

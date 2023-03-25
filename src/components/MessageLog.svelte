@@ -1,4 +1,6 @@
-<div class="message-log" />
+<section class="message-log">
+	<slot />
+</section>
 
 <style>
 	.message-log {
