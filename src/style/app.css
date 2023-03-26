@@ -1,7 +1,7 @@
 :root {
-	--bg-dark-0: #373a52;
-	--bg-dark-1: #505375;
-	color-scheme: light dark;
+	--bg-primary-color: hsl(0, 0%, 12.5%);
+	--bg-secondary-color: hsl(0, 0%, 25%);
+	--bg-accent-color: hsl(235, 44%, 65%);
 }
 
 * {
@@ -30,6 +30,13 @@
 	flex-direction: column;
 }
 
+.text-wrap {
+	white-space: pre-wrap;
+	word-break: break-word;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
 .textarea-like {
 	border: none;
 	overflow: auto;
@@ -38,15 +45,16 @@
 
 	-webkit-user-select: text;
 	user-select: text;
-
-	white-space: pre-wrap;
-	word-break: break-word;
 }
 
-.dark-0 {
-	background-color: var(--bg-dark-0);
+.theme-primary {
+	background-color: var(--bg-primary-color);
 }
 
-.dark-1 {
-	background-color: var(--bg-dark-1);
+.theme-secondary {
+	background-color: var(--bg-secondary-color);
+}
+
+.theme-accent {
+	background-color: var(--bg-accent-color);
 }

@@ -1,7 +1,8 @@
 <div class="message-input-container flex-col">
 	<section
-		class="message-input-field textarea-like dark-1"
+		class="message-input-field textarea-like text-wrap theme-secondary"
 		contenteditable="true"
+		on:keydown
 	/>
 </div>
 
