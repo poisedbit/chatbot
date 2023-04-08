@@ -8,7 +8,11 @@
 	});
 </script>
 
-<section class="message-log flex-col" bind:this={logContainer}>
+<section
+	class="message-log flex-col"
+	aria-label="Message log"
+	bind:this={logContainer}
+>
 	<slot />
 </section>
 

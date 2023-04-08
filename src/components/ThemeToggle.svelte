@@ -23,11 +23,17 @@
 	});
 </script>
 
-<button class="theme-toggle flex-col" type="button" on:click={changeTheme}>
+<button
+	class="theme-toggle flex-col"
+	type="button"
+	aria-label="Theme toggle"
+	tabindex="0"
+	on:click={changeTheme}
+>
 	{#if theme !== "dark"}
-		<IconSunFilled {size} />
+		<IconSunFilled {size} aria-hidden="true" />
 	{:else}
-		<IconMoonFilled {size} />
+		<IconMoonFilled {size} aria-hidden="true" />
 	{/if}
 </button>
 

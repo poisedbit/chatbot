@@ -12,7 +12,7 @@
 body.dark {
 	--bg-color-primary: hsl(0, 0%, 12.5%);
 	--bg-color-secondary: hsl(0, 0%, 25%);
-	--bg-color-accent: hsl(235, 44%, 65%);
+	--bg-color-accent: hsl(235, 41%, 55%);
 }
 
 body.light {

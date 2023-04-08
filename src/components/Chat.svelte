@@ -27,7 +27,7 @@
 	}
 </script>
 
-<article class="chat flex-col theme-primary">
+<article class="chat flex-col theme-primary" aria-label="Chat">
 	<MessageLog>
 		{#each messages as [sender, message]}
 			<MessageLogEntry {sender} {message} />

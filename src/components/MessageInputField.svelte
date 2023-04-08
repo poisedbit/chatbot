@@ -2,6 +2,9 @@
 	<div
 		class="message-input-field textarea-like text-wrap theme-secondary"
 		contenteditable="true"
+		role="textbox"
+		aria-label="Message input field"
+		tabindex="0"
 		on:keydown
 	/>
 </div>
