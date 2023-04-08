@@ -20,10 +20,12 @@
 	}
 
 	.message-log-entry.bot {
-		align-self: flex-start;
+		align-self: start;
+		border-radius: 0 1rem 1rem;
 	}
 
 	.message-log-entry.user {
-		align-self: flex-end;
+		align-self: end;
+		border-radius: 1rem 1rem 0;
 	}
 </style>

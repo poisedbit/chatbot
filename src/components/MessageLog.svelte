@@ -1,4 +1,14 @@
-<section class="message-log flex-col">
+<script lang="ts">
+	import { afterUpdate } from "svelte";
+
+	let logContainer: HTMLElement;
+
+	afterUpdate(() => {
+		logContainer.scrollTop = logContainer.scrollHeight;
+	});
+</script>
+
+<section class="message-log flex-col" bind:this={logContainer}>
 	<slot />
 </section>
 
