@@ -1,9 +1,3 @@
-:root {
-	--bg-primary-color: hsl(0, 0%, 12.5%);
-	--bg-secondary-color: hsl(0, 0%, 25%);
-	--bg-accent-color: hsl(235, 44%, 65%);
-}
-
 * {
 	padding: 0;
 	margin: 0;
@@ -11,6 +5,20 @@
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
 		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
 		sans-serif;
+}
+
+/* color scheme goes to hell, classic light dark toggle */
+
+body.dark {
+	--bg-color-primary: hsl(0, 0%, 12.5%);
+	--bg-color-secondary: hsl(0, 0%, 25%);
+	--bg-color-accent: hsl(235, 44%, 65%);
+}
+
+body.light {
+	--bg-color-primary: hsl(0, 0%, 87.5%);
+	--bg-color-secondary: hsl(0, 0%, 75%);
+	--bg-color-accent: hsl(235, 60%, 83%);
 }
 
 /* textarea {
@@ -47,14 +55,18 @@
 	user-select: text;
 }
 
+.show {
+	display: block !important;
+}
+
 .theme-primary {
-	background-color: var(--bg-primary-color);
+	background-color: var(--bg-color-primary);
 }
 
 .theme-secondary {
-	background-color: var(--bg-secondary-color);
+	background-color: var(--bg-color-secondary);
 }
 
 .theme-accent {
-	background-color: var(--bg-accent-color);
+	background-color: var(--bg-color-accent);
 }

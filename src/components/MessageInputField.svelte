@@ -1,5 +1,5 @@
 <div class="message-input-container flex-col">
-	<section
+	<div
 		class="message-input-field textarea-like text-wrap theme-secondary"
 		contenteditable="true"
 		on:keydown
@@ -20,10 +20,6 @@
 	}
 
 	@media only screen and (max-width: 768px) {
-		.message-input-container {
-			padding: 0.5rem;
-		}
-
 		.message-input-field {
 			padding: 0.5rem;
 		}

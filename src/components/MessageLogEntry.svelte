@@ -1,10 +1,8 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-
 	export let sender: string;
 	export let message: string;
 
-	const msgClass = `message ${sender} text-wrap`;
+	const msgClass = `message-log-entry ${sender} text-wrap`;
 </script>
 
 <article
@@ -16,16 +14,16 @@
 </article>
 
 <style>
-	.message {
+	.message-log-entry {
 		padding: 1rem;
 		max-width: 70%;
 	}
 
-	.message.bot {
+	.message-log-entry.bot {
 		align-self: flex-start;
 	}
 
-	.message.user {
+	.message-log-entry.user {
 		align-self: flex-end;
 	}
 </style>

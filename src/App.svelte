@@ -1,8 +1,10 @@
 <script lang="ts">
 	import Chat from "./components/Chat.svelte";
+	import ThemeToggle from "./components/ThemeToggle.svelte";
 </script>
 
 <main class="flex-col">
+	<ThemeToggle />
 	<Chat />
 </main>
 
