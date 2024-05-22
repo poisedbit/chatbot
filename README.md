@@ -1,4 +1,4 @@
-# Chatbot
+# Chatbot [ARCHIVED]
 
 Simple Chatbot interface, which makes use of elizabot for generating messages. This project is mostly based on [Svelte's update lifecycle example](https://svelte.dev/examples/update). The main objective was to get familiarized with Svelte's framework.
 
